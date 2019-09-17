@@ -1,29 +1,31 @@
 public class Node {
-        private String data;
-        private Node next;
+    private String data;
+    private Node next;
 
-        public String getData(){
-            return next.toString();
-        }
+    public Node() {}
 
-        public void setData(String data){
-            data = data;
-        }
+    public Node(String data, Node next){
+        this.data = data;
+        this.next = next;
+    }
 
-        public Node getNext(){
-            return next;
-        }
+    public String getData() {
+        return next.toString();
+    }
 
-        public void setNext(Node next){
-            this.next = next;
-        }
+    public void setData(String data) {
+        data = data;
+    }
 
-        public Node(String data, Node next){
-            this.data = data;
-            this.next = next;
-        }
+    public Node getNext() {
+        return next;
+    }
 
-        public String toString(){
-            return data;
-        }
+    public void setNext(Node next) {
+        this.next = next;
+    }
+
+    public String toString() {
+        return data;
+    }
 }
