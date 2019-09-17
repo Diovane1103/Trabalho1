@@ -1,13 +1,14 @@
 public class MyLinkedList {
     Node head;
     Node tail;
+
     public void addNoteInLast(Node node) {
         if(null == tail) {
             head = node;
             tail = node;
         } else {
             tail.setNext(node);
-            tail= node;
+            tail = node;
         }
     }
 
@@ -17,7 +18,7 @@ public class MyLinkedList {
 
     public int traverse() {
         int listSize = 1;
-        if(head = null) {
+        if(head == null) {
             return listSize;
         } else {
             Node tempHead = head;
